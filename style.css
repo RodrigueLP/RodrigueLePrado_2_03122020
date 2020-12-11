@@ -14,8 +14,8 @@ body
 	font-family: 'Raleway', Arial, Verdana;
 	color: black;
 	width: 1440px;
-	margin-left: 230px;
-	margin-right: 230px;
+	margin-left: 250px;
+	margin-right: 250px;
 	margin-top: 0px;
 }
 
@@ -33,7 +33,7 @@ h2
 
 h3
 {
-	font-size: 1em;
+	font-size: 1.1em;
 	font-weight: bold;
 }
 
@@ -49,13 +49,6 @@ a
 	color: black;
 }
 
-input
-{
-	font-size: 1em;
-	font-weight: bold;
-	color: black;
-}
-
 	/* Header */
 
 .header
@@ -68,8 +61,8 @@ input
 
 .logo
 {
-  	grid-area: 0/2;
-  	padding: 0 40px;
+  	grid-area: 0;
+  	padding: 0px 40px;
  	height: 45px;
 }
 
@@ -112,6 +105,8 @@ input
 }
 
 	/* Recherche */
+
+		/*Formulaire*/
 
 .titreprincipal
 {
@@ -161,15 +156,30 @@ input
 	cursor: pointer;
 }
 
+::placeholder
+{
+	color: black;
+	font-family: 'Raleway';
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.txtrechercher
+{
+	font-family: 'Raleway';
+	font-size: 1.2em;
+}
+
 form
 {
 	margin-bottom: 40px;
 }
 
+		/* Filtres */
+
 .filtres
 {
 	display: inline-flex;
-	flex-wrap: wrap;
 }
 
 .titrefiltres
@@ -199,8 +209,8 @@ form
 .iconesfiltres
 {
 	display: flex;
-  	align-items: center;
   	justify-content: center;
+  	align-items: center;
 	background-color: #DEEBFF;
   	border-radius: 100%;
   	height: 50px;
@@ -225,8 +235,7 @@ form
 {
 	display: inline-flex;
   	align-items: center;
-  	margin: 15px;
-  	margin-bottom: 0px;
+  	margin: 15px 15px 0px 15px;
 }
 
 .iconeresultat
@@ -239,13 +248,18 @@ form
   	margin-right: 15px;
   	min-height: 30px;
   	min-width: 30px;
-  	border: solid 1px grey;
+  	border: solid 1px lightgrey;
   	border-radius: 100%; 	
 }
 
 .iconeresultat i
 {
 	color: #0065FC;
+}
+
+.txtresultat
+{
+	color: grey;
 }
 
 /* Hébergements */
@@ -255,17 +269,17 @@ form
 	margin-top: 20px;
 	display: grid;
   	column-gap: 30px;
- 	grid-template-columns: 6fr 3fr;
+ 	grid-template-columns: 2fr 1fr;
 }
 
 .groupehebergement
 {
 	display: grid;
-	grid-template-columns: 250px 250px 250px;
+	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 30px;
   	grid-row-gap: 30px;
   	padding: 30px;
-  	border-radius: 25px;
+  	border-radius: 30px;
   	background-color: #F2F2F2; 	
 }
 
@@ -276,7 +290,7 @@ form
 	height: 100%;
   	padding: 5px;
   	border-radius: 20px;
-  	box-shadow: 0px 0px 15px grey;
+  	box-shadow: 0px 0px 10px grey;
   	cursor: pointer;
 }
 
@@ -298,10 +312,9 @@ form
 .photohebergement
 {
 	object-fit: cover;
-	max-width: 100%;
   	width: 100%;
   	max-height: 100%;
-	height: 110px;
+	height: 120px;
   	border-radius: 15px 15px 0px 0px;
 }
 
@@ -395,11 +408,11 @@ em
 
 .cartelpp
 {
-	height: 8.75rem;
+	height: 140px;
 	background-color: white;
  	padding: 5px;
   	border-radius: 20px;
-  	box-shadow: 0 0 16px grey;
+  	box-shadow: 0px 0px 10px grey;
   	cursor: pointer;
   	box-sizing: border-box;
   	height: 100%;
@@ -434,9 +447,10 @@ em
 
 .activities
 {
+	height: 600px;
 	display: grid;
-	grid-template-columns: 316px 316px 316px 316px;
-	grid-template-rows: auto 225px 30px 30px 30px 225px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 80px 225px 30px 30px 30px 225px;
   	column-gap: 30px;
   	margin: 60px 0px;
 }
@@ -487,8 +501,8 @@ em
 {
 	display: flex;
   	flex-direction: column;
-	box-shadow: 0 0 15px lightgrey;
-  	border-radius: 15px;
+	box-shadow: 0px 0px 10px lightgrey;
+  	border-radius: 20px;
   	overflow: hidden;  	
 }
 
@@ -527,13 +541,13 @@ footer
 {
 	display: flex;
 	box-sizing: border-box;
-  	padding: 0 30px;
+  	padding: 0px 30px;
 }
 
 .apropos, .noshebergements, .assistance
 {
-	width: 30%;
-  	padding: 30px 30px;
+	width: 100%;
+	padding: 30px 30px;
 }
 
 .lienfooter
