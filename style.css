@@ -1,0 +1,548 @@
+/* Définition des polices utilisées */
+
+    @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway'), url('Raleway-Regular.woff') format('woff');
+    }
+
+/* Paramètres généraux */
+
+body
+{
+	font-family: 'Raleway', Arial, Verdana;
+	color: black;
+	width: 1440px;
+	margin-left: 230px;
+	margin-right: 230px;
+	margin-top: 0px;
+}
+
+h1
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2
+{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h3
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+p
+{
+	font-size: 1em;
+	font-weight: normal;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+input
+{
+	font-size: 1em;
+	font-weight: bold;
+	color: black;
+}
+
+	/* Header */
+
+.header
+{
+  	display: grid;
+  	justify-content: space-between;
+  	align-items: center;
+  	margin: auto;
+}
+
+.logo
+{
+  	grid-area: 0/2;
+  	padding: 0 40px;
+ 	height: 45px;
+}
+
+.navigation
+{
+  	grid-area: 1/2;
+  	display: flex;
+  	align-items: center;  	
+}
+
+.liennav
+{
+	padding: 40px;
+}
+
+.liennav[data-active="true"]
+{
+	color: #0065FC;
+	border-top: 3px solid #0065FC;
+}
+
+.liennav:hover
+{
+	border-top: 3px solid #0065FC;
+	color: #0065FC;
+}
+
+.sinscrire
+{
+  	grid-area: 2/3;
+  	padding: 40px;
+  	color: #0065FC;
+}
+
+	/* Main */
+
+.main
+{
+	padding: 0px 40px;
+}
+
+	/* Recherche */
+
+.titreprincipal
+{
+	margin-bottom: 0px;
+}
+
+.titresecondaire
+{
+	margin-top: 10px;
+}
+
+.marker
+{
+	border: 1px solid lightgrey;
+	padding: 15px 20px;
+	border-radius: 15px 0px 0px 15px;
+	background-color: #F2F2F2;
+	border: none;
+}
+
+.formulaire
+{
+	display: inline-flex;
+}
+
+.barrederecherche
+{
+	padding: 15px 20px;
+	border-right: none;
+  	border-left: none;
+  	border-top: 1px solid #F2F2F2;
+  	border-bottom: 1px solid #F2F2F2;
+  	color: black;
+  	box-shadow: none;
+	outline: none;
+}
+
+.boutonderecherche
+{
+	padding: 15px 20px;
+	margin-left: 0px;
+	border-radius: 0px 15px 15px 0px;
+	background-color: #0065FC;
+	color: white;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+form
+{
+	margin-bottom: 40px;
+}
+
+.filtres
+{
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.titrefiltres
+{
+	margin: 0px 30px 15px 0px;
+  	display: flex;
+  	align-items: center;
+}
+
+.groupefiltres
+{
+  	display: flex;
+  	align-items: center;
+  	margin-right: 30px;
+  	border: 2px solid lightgrey;
+  	border-radius: 100px 100px 100px 100px;
+  	margin-bottom: 5px;
+  	cursor: pointer;
+  	font-weight: bold;
+}
+
+.groupefiltres:hover
+{
+  	transform: scale(1.05);
+}
+
+.iconesfiltres
+{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	background-color: #DEEBFF;
+  	border-radius: 100%;
+  	height: 50px;
+  	width: 50px;
+  	min-height: 60px;
+  	min-width: 60px;
+  	margin: -2px;
+}
+
+.filtres span
+{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.filtres i
+{
+	color: #0065FC;
+}
+
+.resultat
+{
+	display: inline-flex;
+  	align-items: center;
+  	margin: 15px;
+  	margin-bottom: 0px;
+}
+
+.iconeresultat
+{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	height: 15px;
+  	width: 15px;
+  	margin-right: 15px;
+  	min-height: 30px;
+  	min-width: 30px;
+  	border: solid 1px grey;
+  	border-radius: 100%; 	
+}
+
+.iconeresultat i
+{
+	color: #0065FC;
+}
+
+/* Hébergements */
+
+.hosting
+{	
+	margin-top: 20px;
+	display: grid;
+  	column-gap: 30px;
+ 	grid-template-columns: 6fr 3fr;
+}
+
+.groupehebergement
+{
+	display: grid;
+	grid-template-columns: 250px 250px 250px;
+	column-gap: 30px;
+  	grid-row-gap: 30px;
+  	padding: 30px;
+  	border-radius: 25px;
+  	background-color: #F2F2F2; 	
+}
+
+.cartehebergement
+{
+	box-sizing: border-box;
+	background-color: white;
+	height: 100%;
+  	padding: 5px;
+  	border-radius: 20px;
+  	box-shadow: 0px 0px 15px grey;
+  	cursor: pointer;
+}
+
+.cartehebergement:hover
+{
+	transform: scale(1.05);
+}
+
+.headerhebergement
+{
+	grid-column: 1/-1;
+}
+
+.titrehebergement
+{
+	margin: 0px;
+}
+
+.photohebergement
+{
+	object-fit: cover;
+	max-width: 100%;
+  	width: 100%;
+  	max-height: 100%;
+	height: 110px;
+  	border-radius: 15px 15px 0px 0px;
+}
+
+.figureimage
+{
+  	margin: 0px;
+}
+
+.legende
+{
+  	margin: 5px 0px 0px 10px;	
+}
+
+.souslegende
+{
+	margin: 5px 10px 5px 10px;
+}
+
+em
+{
+	font-weight: bold;
+	font-style: normal; 
+}
+
+.notation
+{
+	margin: 0px 10px 5px 10px;	
+}
+
+.notation i[data-active="true"]
+{
+	color: #0065FC;
+}
+
+.notation i[data-active="false"]
+{
+	color: lightgrey;
+}
+
+.afficherplus
+{
+	font-weight: bold;
+}
+
+/* Les plus populaires */
+
+.lespluspopulaires
+{
+	background-color: #F2F2F2;
+	display: grid;
+	grid-template-rows: auto repeat(3, 1fr);
+  	grid-row-gap: 30px;
+  	border-radius: 30px;
+  	padding: 30px;
+}
+
+.titrelpp
+{
+	margin: 0px;
+  	display: inline-flex;
+  	justify-content: space-between;
+}
+
+.modiflpp
+{
+	display: flex;
+  	align-items: stretch;
+  	height: 100%;
+}
+
+.modifimglpp
+{
+	position: relative;
+  	min-width: 40%;
+}
+
+.photolpp
+{
+	position: absolute;
+	width: 100%;
+  	height: 100%;
+	object-fit: cover;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.legendelpp
+{
+	display: flex;
+  	flex-direction: column;
+}
+
+.cartelpp
+{
+	height: 8.75rem;
+	background-color: white;
+ 	padding: 5px;
+  	border-radius: 20px;
+  	box-shadow: 0 0 16px grey;
+  	cursor: pointer;
+  	box-sizing: border-box;
+  	height: 100%;
+}
+
+.cartelpp:hover
+{
+	transform: scale(1.05);
+}
+
+.espace
+{
+	flex-grow: 1;
+}
+
+.notationlpp
+{
+	margin: 0px 10px 5px 10px;
+}
+
+.notationlpp i[data-active="true"]
+{
+	color: #0065FC;
+}
+
+.notationlpp i[data-active="false"]
+{
+	color: lightgrey;
+}
+
+/* Activités */
+
+.activities
+{
+	display: grid;
+	grid-template-columns: 316px 316px 316px 316px;
+	grid-template-rows: auto 225px 30px 30px 30px 225px;
+  	column-gap: 30px;
+  	margin: 60px 0px;
+}
+
+.vieuxport 
+{
+    grid-column: 1/2;
+    grid-row: 2/7;  
+}
+
+.calanques 
+{
+	grid-column: 3/4;
+    grid-row: 2/7;
+}
+
+.fort 
+{
+    grid-column: 2/3;
+    grid-row: 2/5;
+}
+
+.frioul
+{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.garde 
+{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.longchamp 
+{
+    grid-column: 4/5;
+    grid-row: 4/7;
+}
+
+.titreactivites
+{
+	grid-column: 1/-1;
+	margin-bottom: 20px;
+}
+
+.carteactivites
+{
+	display: flex;
+  	flex-direction: column;
+	box-shadow: 0 0 15px lightgrey;
+  	border-radius: 15px;
+  	overflow: hidden;  	
+}
+
+.carteactivites:hover
+{
+	transform: scale(1.05);
+}
+
+.modifimgact
+{
+	position: relative;
+  	flex-grow: 1;
+}
+
+.photoact
+{
+	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	object-fit: cover;
+}
+
+.legendeact
+{
+	margin: 20px 25px;
+}
+
+/* Footer */
+
+footer
+{
+	background-color: #F2F2F2;
+}
+
+.groupefooter
+{
+	display: flex;
+	box-sizing: border-box;
+  	padding: 0 30px;
+}
+
+.apropos, .noshebergements, .assistance
+{
+	width: 30%;
+  	padding: 30px 30px;
+}
+
+.lienfooter
+{
+	display: flex;
+  	margin: 15px 0px;
+}
+
+.lienfooter:hover
+{
+	text-decoration: underline;
+}
