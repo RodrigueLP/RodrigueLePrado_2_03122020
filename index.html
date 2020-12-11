@@ -6,6 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="https://kit.fontawesome.com/e6352a48a5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
 	<title>Reservia</title>
 </head>
 <!-- Fin du head -->
@@ -16,10 +17,10 @@
 	<header class="header">
 		<img class="logo" src="images/logo/Reservia@3x.png" alt="Logo de Reservia">
 		<nav class="navigation">
-			<a class="liennav" href="#hebergement">Hébergement</a>
-			<a class="liennav" href="#activites">Activités</a>
+			<a class="liennav" href="#hebergement" data-active="true">Hébergement</a>
+			<a class="liennav" href="#activites" data-active="false">Activités</a>
+			<a class="sinscrire" href="#" data-active="false">S'inscrire</a>
 		</nav>
-		<a class="sinscrire" href="#">S'inscrire</a>
 	</header>
 	<!-- Fin du header -->
 
@@ -41,7 +42,7 @@
 				<span class="marker">
 					<i class="fas fa-map-marker-alt"></i>
 				</span>
-				<input class="barrederecherche" type="search" placeholder="Marseille, France" size="1">
+				<input class="barrederecherche" type="search" placeholder="Marseille, France">
 				<button class="boutonderecherche">
 					<span class="txtrechercher">Rechercher</span>
 				</button>
@@ -85,7 +86,7 @@
 			<!-- Message de résultat -->
 			<div class="resultat">
 				<div class="iconeresultat">
-					<i class="fas fa-info-circle"></i>
+					<i class="fas fa-info"></i>
 				</div>
 				<p class="txtresultat">Plus de 500 logements sont disponibles dans cette ville</p>
 			</div>
@@ -231,14 +232,15 @@
 
 				<!-- Matin -->
 				<article class="cartelpp">
-					<a href="#">
+					<a class="modiflpp" href="#">
 						<div class="modifimglpp">
 							<img class="photolpp" src="images/hebergements/4_small/matin.jpg" alt="Photo de l'Hôtel Le soleil du matin">
 						</div>
 						<div class="legendelpp">
 							<h3 class="legende">Hôtel Le soleil du matin</h3>
 							<p class="souslegende">Nuit à partir de <em>128€</em></p>
-							<div class="notation">
+							<div class="espace"></div>
+							<div class="notationlpp">
 								<i class="fas fa-star" data-active="true"></i>
 								<i class="fas fa-star" data-active="true"></i>
 								<i class="fas fa-star" data-active="true"></i>
@@ -251,14 +253,15 @@
 
 				<!-- Eau -->
 				<article class="cartelpp">
-					<a href="#">
+					<a class="modiflpp" href="#">
 						<div class="modifimglpp">
 							<img class="photolpp" src="images/hebergements/4_small/eau.jpg" alt="Photo des chambres d'hôtes Au coeur de l'eau">
 						</div>
 						<div class="legendelpp">
 							<h3 class="legende">Au coeur de l'eau Chambres d'hôtes</h3>
 							<p class="souslegende">Nuit à partir de <em>71€</em></p>
-							<div class="notation">
+							<div class="espace"></div>
+							<div class="notationlpp">
 								<i class="fas fa-star" data-active="true"></i>
 								<i class="fas fa-star" data-active="true"></i>
 								<i class="fas fa-star" data-active="true"></i>
@@ -271,14 +274,15 @@
 
 				<!-- Bleublanc -->
 				<article class="cartelpp">
-					<a href="#">
+					<a class="modiflpp" href="#">
 						<div class="modifimglpp">
 							<img class="photolpp" src="images/hebergements/4_small/bleublanc.jpg" alt="Photo de l'Hôtel Tout bleu et Blanc">
 						</div>
 						<div class="legendelpp">
 							<h3 class="legende">Hôtel Tout bleu et Blanc</h3>
 							<p class="souslegende">Nuit à partir de <em>68€</em></p>
-							<div class="notation">
+							<div class="espace"></div>
+							<div class="notationlpp">
 								<i class="fas fa-star" data-active="true"></i>
 								<i class="fas fa-star" data-active="true"></i>
 								<i class="fas fa-star" data-active="true"></i>
@@ -298,46 +302,46 @@
 		<section class="activities" id="activites">
 			<h2 class="titreactivites">Activités à Marseille</h2>
 
-			<a class="vieuxport" href="#">
+			<a class="carteactivites vieuxport" href="#">
 				<div class="modifimgact">
 					<img class="photoact" src="images/activites/4_small/vieuxport.jpg" alt="Photo du Vieux Port">
 				</div>
-				<h3 class="legende">Vieux Port</h3>
+				<h3 class="legendeact">Vieux Port</h3>
 			</a>
 
-			<a class="fort" href="#">
+			<a class="carteactivites fort" href="#">
 				<div class="modifimgact">
 					<img class="photoact" src="images/activites/4_small/fort.jpg" alt="Photo du Fort de Pomègues">
 				</div>
-				<h3 class="legende">Fort de Pomègues</h3>
+				<h3 class="legendeact">Fort de Pomègues</h3>
 			</a>
 
-			<a class="frioul" href="#">
+			<a class="carteactivites frioul" href="#">
 				<div class="modifimgact">
 					<img class="photoact" src="images/activites/4_small/frioul.jpg" alt="Photo des Îles du Frioul">
 				</div>
-				<h3 class="legende">Îles du Frioul</h3>
+				<h3 class="legendeact">Îles du Frioul</h3>
 			</a>
 
-			<a class="calanques" href="#">
+			<a class="carteactivites calanques" href="#">
 				<div class="modifimgact">
 					<img class="photoact" src="images/activites/4_small/calanques.jpg" alt="Photo du Parc National des Calanques">
 				</div>
-				<h3 class="legende">Parc National des Calanques</h3>
+				<h3 class="legendeact">Parc National des Calanques</h3>
 			</a>
 
-			<a class="garde" href="#">
+			<a class="carteactivites garde" href="#">
 				<div class="modifimgact">
-				<img class="photoact" src="images/activites/4_small/garde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
+					<img class="photoact" src="images/activites/4_small/garde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
 				</div>
-				<h3 class="legende">Notre-Dame-de-la-Garde</h3>
+				<h3 class="legendeact">Notre-Dame-de-la-Garde</h3>
 			</a>
 
-			<a class="longchamp" href="#">
+			<a class="carteactivites longchamp" href="#">
 				<div class="modifimgact">
 					<img class="photoact" src="images/activites/4_small/longchamp.jpg" alt="Photo du Parc Longchamp">
 				</div>
-				<h3 class="legende">Parc Longchamp</h3>
+				<h3 class="legendeact">Parc Longchamp</h3>
 			</a>
 		</section>
 		<!-- Fin des Activités -->
