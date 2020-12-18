@@ -92,7 +92,12 @@ a
 {
 	.liennav
 	{
-		font-size: 1em;
+		font-size: 0.8em;
+	}
+
+	.sinscrire
+	{
+		font-size: 0.8em;
 	}
 }
 
@@ -102,7 +107,7 @@ a
 	{
     	grid-template-columns: auto auto;
     	grid-template-areas: "logo . subscribe" "nav nav nav";
-    	margin-bottom: 30px;
+    	margin-bottom: 0px;
     	font-weight: bold;
 	}
 
@@ -202,14 +207,6 @@ a
 	margin-top: 10px;
 }
 
-@media screen and (max-width: 375px)
-{
-	.titreprincipal
-	{
-		font-size: 1.5em;
-	}
-}
-
 @media screen and (max-width: 425px)
 {
 	.titreprincipal
@@ -220,7 +217,7 @@ a
 	.titresecondaire
 	{
 		margin-bottom: 40px;
-		font-size: 1.2em;
+		font-size: 1.3em;
 	}
 	.recherche
 	{
@@ -410,7 +407,7 @@ form
 {
 	.titrefiltres
 	{
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 
 	.filtres 
